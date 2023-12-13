@@ -36,10 +36,10 @@ int main() {
 
     do {
         printf("\nMenu:\n");
-        printf("1 - md make directory\n");
-        printf("2 - cd dir change directory\n");
-        printf("3 - cd.. exit derectory\n");
-        printf("4 - dir list subdirectories\n");
+        printf("1 - MD (make directory)\n");
+        printf("2 - CD (dir change directory)\n");
+        printf("3 - CD.. (exit derectory)\n");
+        printf("4 - DIR (list subdirectories)\n");
         printf("5 - izlaz\n");
         printf(":");
         scanf("%d", &command);
