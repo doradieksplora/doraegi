@@ -72,7 +72,7 @@ int main() {
         }
     } while (command != 5);
 
-    free(rootDirectory);
+    free(rootDirectory); //nece osloboditi memoriju pod-direktotija, implementirati rekurzivno oslobadanje memorije
     return 0;
 }
 
