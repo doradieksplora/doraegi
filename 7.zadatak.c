@@ -41,7 +41,7 @@ int main() {
         printf("3 - cd.. exit derectory\n");
         printf("4 - dir list subdirectories\n");
         printf("5 - izlaz\n");
-        printf("[----->");
+        printf(":");
         scanf("%d", &command);
         //varijabla imena direktorija se mora deklarirat prije switcha jer se u switchu nemogu deklarirat varijable
         char directoryName[50];
