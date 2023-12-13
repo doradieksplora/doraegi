@@ -32,7 +32,7 @@ int main() {
     headDirectory.next = rootDirectory;
 
     PositionDirectory currentDirectory = rootDirectory;
-    int command = 0;
+    int choice = 0;
 
     do {
         printf("\nMenu:\n");
@@ -42,11 +42,11 @@ int main() {
         printf("4 - DIR (list subdirectories)\n");
         printf("5 - izlaz\n");
         printf(":");
-        scanf("%d", &command);
+        scanf("%d", &choice);
         //varijabla imena direktorija se mora deklarirat prije switcha jer se u switchu nemogu deklarirat varijable
         char directoryName[50];
 
-        switch (command) {
+        switch (choice) {
         case 1:
             printf("Ime direktorija: ");
             scanf(" %s", directoryName);
@@ -70,7 +70,7 @@ int main() {
         default:
             printf("Ne postoji ta naredba\n");
         }
-    } while (command != 5);
+    } while (choice != 5);
 
     free(rootDirectory); //nece osloboditi memoriju pod-direktotija, implementirati rekurzivno oslobadanje memorije
     return 0;
